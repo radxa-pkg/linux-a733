@@ -1,4 +1,4 @@
-KERNEL_FORK ?= aw2501
+KERNEL_FORK ?= a733
 ARCH ?= arm64
 CROSS_COMPILE ?= aarch64-linux-gnu-
 DPKG_FLAGS ?= -d

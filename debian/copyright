@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: linux-aw2501
-Source: https://github.com/radxa-pkg/linux-aw2501
+Upstream-Name: linux-a733
+Source: https://github.com/radxa-pkg/linux-a733
 
 Files: *
 Copyright: © 2025 Radxa Computer Co., Ltd

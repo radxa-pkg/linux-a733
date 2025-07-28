@@ -1,7 +1,7 @@
 -include .github/local/Makefile.local
 -include Makefile.extra
 
-PROJECT ?= linux-aw2501
+PROJECT ?= linux-a733
 CUSTOM_DEBUILD_ENV ?= DEB_BUILD_OPTIONS='parallel=1'
 
 .DEFAULT_GOAL := all
