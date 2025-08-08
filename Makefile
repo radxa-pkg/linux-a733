@@ -12,7 +12,9 @@ all: build
 devcontainer_setup:
 	sudo dpkg --add-architecture arm64
 	sudo apt-get update
+	sudo apt-get install -y crossbuild-essential-arm64 binfmt-support qemu-user-static
 	sudo apt-get build-dep . -y
+	sudo apt-get build-dep . -y --host-architecture arm64
 
 #
 # Test
