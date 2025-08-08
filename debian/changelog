@@ -1,3 +1,10 @@
+linux-a733 (5.15.147-3) unstable; urgency=medium
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 08 Aug 2025 11:56:02 +0000
+
 linux-a733 (5.15.147-2) unstable; urgency=medium
 
   [ github-actions[bot] ]
