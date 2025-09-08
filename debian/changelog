@@ -1,3 +1,13 @@
+linux-a733 (5.15.147-8) unstable; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * fix: restore devcontainer image version
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 08 Sep 2025 06:26:58 +0000
+
 linux-a733 (5.15.147-7) unstable; urgency=medium
 
   [ github-actions[bot] ]
