@@ -5,6 +5,7 @@ SUPPORT_CLEAN := false
 ALLWINNER_FIXUP := src/bsp \
 	src/arch/arm64/configs/bsp.config \
 	src/arch/arm64/boot/dts/allwinner/sun60i-a733-cubie-a7a.dts \
+	src/arch/arm64/boot/dts/allwinner/sun60i-a733-cubie-a7s.dts \
 	src/arch/arm64/boot/dts/allwinner/sun60i-a733-cubie-a7z.dts \
 	bsp/ramfs/ramfs_aarch64.cpio.gz bsp/include/sunxi-autogen.h
 
@@ -26,6 +27,9 @@ bsp/include/sunxi-autogen.h: $(SRC-KERNEL)
 
 src/arch/arm64/boot/dts/allwinner/sun60i-a733-cubie-a7a.dts: $(SRC-KERNEL)
 	ln -sf ../../../../../../device-a733/configs/cubie_a7a/linux-5.15/board.dts $@
+
+src/arch/arm64/boot/dts/allwinner/sun60i-a733-cubie-a7s.dts: $(SRC-KERNEL)
+	ln -sf ../../../../../../device-a733/configs/cubie_a7s/linux-5.15/board.dts $@
 
 src/arch/arm64/boot/dts/allwinner/sun60i-a733-cubie-a7z.dts: $(SRC-KERNEL)
 	ln -sf ../../../../../../device-a733/configs/cubie_a7z/linux-5.15/board.dts $@
