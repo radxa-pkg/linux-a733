@@ -1,3 +1,10 @@
+linux-a733 (5.15.147-10) unstable; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * fix: restore devcontainer.json image
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Sat, 27 Sep 2025 10:18:54 +0000
+
 linux-a733 (5.15.147-9) unstable; urgency=medium
 
   [ Jiali Chen ]
