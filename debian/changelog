@@ -1,3 +1,13 @@
+linux-a733 (5.15.147-11) unstable; urgency=medium
+
+  [ Feng Zhang ]
+  * feat: add meta-package for radxa-a733
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 27 Oct 2025 02:18:38 +0000
+
 linux-a733 (5.15.147-10) unstable; urgency=medium
 
   [ ZHANG Yuntian ]
