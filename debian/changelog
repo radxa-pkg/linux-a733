@@ -1,3 +1,13 @@
+linux-a733 (5.15.147-12) unstable; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Change base image from bookworm to bullseye
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 09 Dec 2025 06:32:23 +0000
+
 linux-a733 (5.15.147-11) unstable; urgency=medium
 
   [ Feng Zhang ]
