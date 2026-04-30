@@ -1,8 +1,8 @@
-linux-a733 (5.15.147-21) UNRELEASED; urgency=medium
+linux-a733 (5.15.147-21) unstable; urgency=medium
 
   * Force rebuild due to incorrect devcontainer image
 
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 30 Apr 2026 19:06:02 +0800
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 30 Apr 2026 11:19:20 +0000
 
 linux-a733 (5.15.147-20) unstable; urgency=medium
 
