@@ -3,7 +3,7 @@ linux-a733 (5.15.147-20) unstable; urgency=medium
   [ github-actions[bot] ]
   * chore: update submodules
 
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 30 Apr 2026 06:31:45 +0000
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 30 Apr 2026 09:42:38 +0000
 
 linux-a733 (5.15.147-19) unstable; urgency=medium
 
