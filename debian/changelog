@@ -1,3 +1,11 @@
+linux-a733 (5.15.147-19) unstable; urgency=medium
+
+  [ dependabot[bot] ]
+  * chore(deps): bump dependabot/fetch-metadata from 2 to 3
+  * chore(deps): bump softprops/action-gh-release from 2 to 3
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 30 Apr 2026 03:45:16 +0000
+
 linux-a733 (5.15.147-18) unstable; urgency=medium
 
   [ ZHANG Yuntian ]
