@@ -2,3 +2,4 @@ linux/0001-feat-Radxa-common-kernel-config.patch
 linux/0002-feat-Radxa-custom-kernel-config.patch
 linux/0003-fix-use-the-correct-header-path.patch
 linux/0004-fix-add-device-tree.patch
+linux/0005-feat-tune-a733-kernel-config.patch

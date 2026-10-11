@@ -1,0 +1,47 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Pranav0-0Aggarwal <96537779+Pranav0-0Aggarwal@users.noreply.github.com>
+Date: Sun, 11 Oct 2026 22:12:38 +0530
+Subject: [PATCH] feat: a733: tune custom kernel config
+
+Reboot after panics, enable pstore and lockup detectors, default to
+schedutil, drop the AW power domain self-test, KASAN and loglevel 7.
+
+Signed-off-by: Pranav0-0Aggarwal <96537779+Pranav0-0Aggarwal@users.noreply.github.com>
+---
+ src/arch/arm64/configs/radxa_custom.config | 26 ++++++++++++++++++++++
+ 1 file changed, 26 insertions(+)
+
+diff --git a/src/arch/arm64/configs/radxa_custom.config b/src/arch/arm64/configs/radxa_custom.config
+index c3091e9..14a66a7 100644
+--- a/src/arch/arm64/configs/radxa_custom.config
++++ b/src/arch/arm64/configs/radxa_custom.config
+@@ -9,3 +9,29 @@ CONFIG_CPUFREQ_DT=n
+ 
+ # Allwinner has their own panfrost fork
+ CONFIG_DRM_PANFROST=n
++
++# Reboot 10 s after a panic instead of hanging
++CONFIG_PANIC_TIMEOUT=10
++
++# Keep the panic log across a warm reboot; needs a ramoops region in the DT
++CONFIG_PSTORE=y
++CONFIG_PSTORE_CONSOLE=y
++CONFIG_PSTORE_PMSG=y
++CONFIG_PSTORE_RAM=y
++
++# Report soft lockups and hung tasks
++CONFIG_SOFTLOCKUP_DETECTOR=y
++CONFIG_DETECT_HUNG_TASK=y
++
++# schedutil instead of ondemand
++CONFIG_CPU_FREQ_DEFAULT_GOV_ONDEMAND=n
++CONFIG_CPU_FREQ_DEFAULT_GOV_SCHEDUTIL=y
++
++# The power domain self-test fails to probe with -110
++CONFIG_AW_POWER_DOMAIN_TEST=n
++
++# Match the shipped kernel cmdline (loglevel=4)
++CONFIG_CONSOLE_LOGLEVEL_DEFAULT=4
++
++# KASAN_HW_TAGS is inert without MTE hardware and kasan=off is on the cmdline
++CONFIG_KASAN=n
